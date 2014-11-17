@@ -1,0 +1,6 @@
+*
+!.gitignore
+!fig.sample.yml
+!README.md
+!files/.gitkeep
+!mysql/.gitkeep
