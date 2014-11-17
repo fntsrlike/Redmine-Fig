@@ -9,20 +9,18 @@ redmine:
   links:
     - mysql
   environment:
-    - SMTP_HOST=smtp.mandrillapp.com
+    - SMTP_HOST=smtp.mandrillapp.com  # Change to host of your mail server
     - SMTP_PORT=587
-    - SMTP_USER=ACCOUNT
-    - SMTP_PASS=PASSWORD
+    - SMTP_USER=USERNAME              # Change to username of your mail server
+    - SMTP_PASS=PASSWORD              # Change to password of your mail server
 
 mysql:
   image: sameersbn/mysql:latest
   ports:
     - "3306:3306"
-  volumes: 
+  volumes:
     - /srv/redmine/mysql:/var/lib/mysql
   environment:
     - DB_NAME=redmine_production
     - DB_USER=redmine
-    - DB_PASS=DB_PASSWORD
-
-
+    - DB_PASS=DB_PASSWORD             # Change to your database's password
