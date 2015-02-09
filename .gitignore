@@ -2,5 +2,8 @@
 !.gitignore
 !fig.sample.yml
 !README.md
+!backup.sh
 !files/.gitkeep
 !mysql/.gitkeep
+!backup/.gitkeep
+
